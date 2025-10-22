@@ -66,9 +66,9 @@ def index():
             if pwned:
                 all_result.append(f"Password has been pawned {count} times!")
             else:
-                all_result.append("Password not fount in pwned database.You found a good password.")
+                all_result.append("Congrats,you got a Guardian Key.")
         else:
-            all_result.append("Password strength check failed.")
+            all_result.append("Password is weak.")
     return render_template('index.html', result=all_result)
 
 
